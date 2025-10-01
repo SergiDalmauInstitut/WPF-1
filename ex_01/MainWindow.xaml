@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ex_01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="365,217,0,0" VerticalAlignment="Top"/>
-
-    </Grid>
+        Title="MainWindow" Height="600" Width="525">
+    <StackPanel>
+        <Label Content="Nom"></Label>
+        <TextBox Width="520" Height="30" Text="{Binding Path=Nom, Mode=TwoWay}"></TextBox>
+        <Label Content="Cognom"></Label>
+        <TextBox Width="520" Height="30" Text="{Binding Path=Cognom, Mode=TwoWay}"></TextBox>
+        <Label Content="Nom complet"></Label>
+        <TextBox Width="520" Height="30" Text="{Binding Path=NomComplet, Mode=TwoWay}"></TextBox>
+    </StackPanel>
 </Window>
